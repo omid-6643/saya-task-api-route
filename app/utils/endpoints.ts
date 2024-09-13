@@ -1,6 +1,9 @@
+
+const baseURL = process.env.NEXT_PUBLIC_API_BASE_URL;
+
 const ENDPOINTS = {
-  post: "http://localhost:3000/api/v1/posts",
-  randomPost: "http://localhost:3000/api/v1/posts/random",
+  post: `${baseURL}/api/v1/posts`,
+  randomPost: `${baseURL}/api/v1/posts/random`,
 };
 
 export default ENDPOINTS;
