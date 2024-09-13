@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# پروژه تسک مصاحبه شرکت سایا
 
-## Getting Started
+این پروژه یک اپلیکیشن وب است که سمت سرور آن با استفاده از Node.js و فریمورک Express.js توسعه داده شده است و کلاینت آن با فریمورک Next.js ساخته شده است. در ادامه به تکنولوژی‌های مورد استفاده و راهنمای اجرای پروژه اشاره شده است.
 
-First, run the development server:
+## تکنولوژی‌های مورد استفاده
+
+- **Next.js**: فریمورک React برای رندرینگ سمت سرور و ساخت اپلیکیشن‌های استاتیک.
+- **Express.js**: فریمورک مینیمال و انعطاف‌پذیر برای Node.js جهت توسعه سمت سرور.
+- **@tanstack/react-query**: برای مدیریت درخواست‌های سرور و کش کردن داده‌ها.
+- **Typescript**: استفاده از تایپ‌اسکریپت برای ایمنی بیشتر کدها و بهبود توسعه‌پذیری.
+- **shadcn**: کتابخانه‌ای برای کامپوننت‌های UI و استایل‌دهی.
+- **Axios**: کتابخانه‌ای برای ارسال درخواست‌های HTTP.
+- **React Hook Form**: کتابخانه‌ای برای مدیریت فرم‌ها در React.
+- **TailwindCSS**: فریمورک CSS کاربردی برای طراحی سریع و پاسخگو.
+
+## پیش‌نیازها
+
+- **Node.js** نسخه ۱۴ به بالا
+- **npm** یا **yarn** برای مدیریت بسته‌ها
+
+## نصب و راه‌اندازی
+
+برای نصب و راه‌اندازی پروژه، مراحل زیر را دنبال کنید:
+
+1. **کلون کردن پروژه**:
+
+   ابتدا مخزن پروژه را با استفاده از دستور زیر کلون کنید:
+
+   ```bash
+   git clone https://github.com/username/project-repo.git
+   ```
+
+2. **نصب وابستگی‌ها**:
+
+   به پوشه پروژه بروید و وابستگی‌های مورد نیاز را نصب کنید:
+
+   ```bash
+   cd project-repo
+   npm install
+   ```
+
+3. **اجرای پروژه**:
+
+   برای اجرای پروژه در حالت توسعه از دستور زیر استفاده کنید:
+
+   ```bash
+   npm run dev
+   ```
+
+   پس از اجرا، پروژه در آدرس `http://localhost:3000` در دسترس خواهد بود.
+
+## ساخت و اجرای پروژه در حالت تولید
+
+برای ساخت پروژه در حالت تولید، دستور زیر را اجرا کنید:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+سپس برای اجرای پروژه در حالت تولید:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## توضیحات بیشتر
 
-## Learn More
+- **ساختار پروژه**: پروژه شامل یک سرور Express.js و یک کلاینت Next.js است که به صورت کامل با Typescript نوشته شده است.
+- **مدیریت داده‌ها**: با استفاده از `@tanstack/react-query` برای مدیریت درخواست‌ها و کش کردن داده‌ها.
+- **فرم‌ها**: با استفاده از `React Hook Form` برای مدیریت فرم‌ها به ساده‌ترین روش و با کمترین پیچیدگی.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
